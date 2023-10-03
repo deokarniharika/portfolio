@@ -1,5 +1,7 @@
 import streamlit as st
 
+import streamlit as st
+
 st. set_page_config(layout="wide")
 # Define the header content
 header = """
@@ -31,60 +33,84 @@ projects = [
         "name": "AgrowMore",
         "subtitle": "Mitigating Climate Chaneg Impact Through Smart Agriculture: Soil Temperature Prediction and Analysis",
         "description": "The research focuses on soil temperature variationt. It demonstrates how machine learning models could assist farmers and researchers in reducing the hazards brought on by climate change and offers ideas for future research.",
-        "images": ["agro.jpeg"],  # Add paths to your images
+        "image": "data/agro.jpeg",  # Add paths to your images
         "motivation": "Overall, literature is almost silent on how climate change affects soil temperature and its significant affect towards plant growth. ",
         "link": "manuscript under review",
+        "address":"",
     },
     {
         "name": "Occlusion-Aware Face Recognition",
         "subtitle": "Enhancing face recognition algorithms to accurately identify faces even under partial obstructions",
-        "description": "A dataset comprising images of occluded faces, encompassing various types and degrees of occlusion is curated. Through extensive experimentation and evaluation on benchmark datasets,the effectiveness of our proposed method in improving recognition accuracy and robustness to occlusion is demonstrated. ",
-        "images": ["dnn.jpeg"],  # Add paths to your images
+        "description": "A dataset comprising images of occluded faces with various types and degrees of occlusion is curated. Through extensive experimentation and evaluation on benchmark datasets,the effectiveness of our proposed method is improving its recognition accuracy. ",
+        "image": "data/dnn.jpeg",  # Add paths to your images
         "motivation": "Bringing reliably identify individuals, even in scenarios with obstructed facial features, benefitting security and accessibility.",
         "link": "manuscript under preparation",
+         "address":"",
     },
     {
         "name": "Financial Distress Prediction",
         "subtitle": "Utilizing machine learning to forecast potential financial instability in banks.",
-        "description": "The research focuses on soil temperature variationt. It demonstrates how machine learning models could assist farmers and researchers in reducing the hazards brought on by climate change and offers ideas for future research.",
-        "images": ["agro.jpeg"],  # Add paths to your images
-        "motivation": "Overall, literature is almost silent on how climate change affects soil temperature and its significant affect towards plant growth.",
+        "description": "This project endeavors to empower businesses with predictive analytics, enabling them to anticipate and navigate potential financial challenges, thereby fostering resilience and informed decision-making.",
+        "image": "data/fin.jpeg",  # Add paths to your images
+        "motivation": "In an ever-changing economy, having the foresight to address financial distress is crucial for business resilience and longevity.",
         "link": "internship project",
+         "address":"",
     },
     {
         "name": "MCQ generator",
         "subtitle": "A system that automatically generates Multiple-Choice Questions using Whisper API",
         "description": "The research focuses on soil temperature variationt. It demonstrates how machine learning models could assist farmers and researchers in reducing the hazards brought on by climate change and offers ideas for future research.",
-        "images": ["agro.jpeg"],  # Add paths to your images
+        "image": "data/mcq.jpeg",  # Add paths to your images
         "motivation": "Provide students with opportunities for active learning and assessment during the lecture and improve online education by enhancing video lectures",
-        "link": "under publication",
+        "link": "GitHub",
+         "address":"https://github.com/deokarniharika/MCQ-generator",
     },
      {
         "name": "CricBot",
         "subtitle": "A discord bot that gives the cricket score for matches of India around the world.",
         "description": "!recent command gives updates on the scores of the recent cricket match, !live command gives the live score. Data has been scraped from www.cricbuzz.com using BeautifulSoup, a Python module for extracting data from HTML and XML files.",
-        "images": ["agro.jpeg"],  # Add paths to your images
+        "image": "data/cric.jpeg", 
         "motivation": "Provide cricket enthusiasts with instant score updates and insightful match analysis and bridging the gap between fans and the game.",
-        "link": "under publication",
+        "link": "GitHub",
+         "address":"https://github.com/deokarniharika/CricBot",
     },
      {
         "name": "Jake Bot",
         "subtitle": "Bringing the comedic genius of Jake Peralta from Brooklyn 99 to life through a fun and interactive chatbot experience.",
-        "description": "A Python-coded Discord bot that chats like Jake Peralta from the comedy television series Brooklyn 99. Jake's dialogues were used from Brooklyn 99(Season1-4) script. The chatbot interacted with individuals who shared the same attitude and behaviour using the Microsoft DialoGPT small model.",
-        "images": ["agro.jpeg"],  # Add paths to your images
-        "motivation": "Designed to easy digital interactions on Discord, offering users an engaging and entertaining conversational experience with wit and humour",
-        "link": "under publication",
+        "description": "A Python-coded Discord bot that chats like Jake Peralta from the comedy television series Brooklyn 99. The dataset comprises of various characters dialogues in Season1-4 script. It interacts with individuals using the Microsoft DialoGPT small model.",
+        "image": "data/jake.jpeg",  
+        "motivation": "Designed to ease digital interactions on Discord, offering users an engaging, witty and entertaining conversational experience.",
+        "link": "GitHub",
+         "address":"https://github.com/deokarniharika/Chat-Bot",
     },
     {
-        "name": "EcoBot",
+        "name": "InTheEco Bot",
         "subtitle": "Delivering environmental news from Reddit to raise awareness and promote sustainable practices.",
-        "description": "The research focuses on soil temperature variationt. It demonstrates how machine learning models could assist farmers and researchers in reducing the hazards brought on by climate change and offers ideas for future research.",
-        "images": ["agro.jpeg"],  # Add paths to your images
-        "motivation": "Overall, literature is almost silent on how climate change affects soil temperature and its significant affect towards plant growth.",
-        "link": "under publication",
+        "description": "InTheEco serves as a bridge to Reddit's environmental community. It curates and shares the latest posts related to the environment, ensuring that users remain informed and engaged with the pressing ecological issues of our time.",
+        "image": "data/eco.jpeg",  
+        "motivation": "Understanding the growing interest in environmental matters, this bot has been coded to make environmental news available in servers.",
+        "link": "GitHub",
+         "address":"https://github.com/deokarniharika/InTheEco",
     },
-
-    # Add details for other projects here...
+    {
+        "name": "Digit Recognition",
+        "subtitle": "Precise identification of handwritten digits by advanced ML models, enabling automation in various domains.",
+        "description": "TensoFlow, NumPy, Matplotlib and Keras are the libraries used here. A convolutional neural network implements the digit recognition and the accuracy of the model increases if the number of training examples are increased.",
+        "image": "data/digit.jpeg", 
+        "motivation": "Enhancing efficiency and accuracy in tasks involving handwritten numerical data, from document processing to data entry.",
+        "link": "GitHub",
+         "address":"https://github.com/deokarniharika/digit-recognition",
+    },
+     {
+        "name": "Sentiment Analysis",
+        "subtitle": "Extracting Customer Sentiment Insights with TextBlob, a python library that preprocesses textual data.",
+        "description": "Employing TextBlob, a Python library, this project analyzes customer feedback data to extract sentiments. By categorizing sentiments as positive, negative, or neutral, businesses gain actionable insights for refining products and services",
+        "image": "data/sentiment.jpeg", 
+        "motivation": "Performing sentiment analysis to extract valuable insights from customer feedback, enabling data-driven decisions for businesses.",
+        "link": "Kaggle",
+         "address":"https://www.kaggle.com/code/niharikadeokar/sentiment-analysis-using-textblob",
+    }
+    #added details to all projects
 ]
 
 # Define layout
@@ -103,20 +129,23 @@ for i, project in enumerate(projects):
         
         with st.expander("Description"):
             # Add the image inside the expander
-            for img_path in project["images"]:
-                st.image(img_path, caption="", use_column_width=True)
+            st.image(project['image'], caption="", use_column_width=True)
             st.write(f"{project['description']}")
 
         st.write(f"**Motivation:** {project['motivation']}")
-        st.write(f"**Link:** {project['link']}")
-
+        if 'address' in project and project['address']:
+            st.write(f"**Link:** [{project['link']}]({project['address']})")
+        else:
+            st.write(f"**Link:** {project['link']}")
         st.write("---")  # Add a separator between projects
 
 footer = """
-    <div style="background-color: #8C95E6; color: white; text-align: center; padding: 10px;">
-        <h4>Contact Details</h4>
-    </div>
+<div style="background-color: #B0E0E6; padding: 10px; text-align: center; max-width: 100%; position: fixed; bottom: 0; left: 0; right: 0;">
+    <a href="https://www.linkedin.com/in/deokarniharika/" style="color: #000080; text-decoration: none; margin-right: 20px;">LinkedIn</a>
+    <a href="https://github.com/deokarniharika" style="color: #000080; text-decoration: none; margin-right: 20px;">GitHub</a>
+    <a href="https://www.kaggle.com/niharikadeokar" style="color: #000080; text-decoration: none;">Kaggle</a>
+</div>
 """
 
+# Display the footer
 st.markdown(footer, unsafe_allow_html=True)
-
