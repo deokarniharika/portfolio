@@ -139,12 +139,22 @@ for i, project in enumerate(projects):
             st.write(f"**Link:** {project['link']}")
         st.write("---")  # Add a separator between projects
 
+
+
 footer = """
-<div style="background-color: #B0E0E6; padding: 10px; text-align: center; max-width: 100%; position: fixed; bottom: 0; left: 0; right: 0;">
+<div style="background-color: #B0E0E6; padding: 10px; text-align: center; max-width: 100%; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1;">
     <a href="https://www.linkedin.com/in/deokarniharika/" style="color: #000080; text-decoration: none; margin-right: 20px;">LinkedIn</a>
     <a href="https://github.com/deokarniharika" style="color: #000080; text-decoration: none; margin-right: 20px;">GitHub</a>
     <a href="https://www.kaggle.com/niharikadeokar" style="color: #000080; text-decoration: none;">Kaggle</a>
 </div>
+
+<style>
+@media (max-width: 768px) {
+    div[style*="position: fixed;"] {
+        position: relative !important;
+    }
+}
+</style>
 """
 
 # Display the footer
