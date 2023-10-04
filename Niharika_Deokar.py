@@ -145,7 +145,9 @@ footer = """
 <div style="background-color: #B0E0E6; padding: 10px; text-align: center; max-width: 100%; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1;">
     <a href="https://www.linkedin.com/in/deokarniharika/" style="color: #000080; text-decoration: none; margin-right: 20px;">LinkedIn</a>
     <a href="https://github.com/deokarniharika" style="color: #000080; text-decoration: none; margin-right: 20px;">GitHub</a>
-    <a href="https://www.kaggle.com/niharikadeokar" style="color: #000080; text-decoration: none;">Kaggle</a>
+    <a href="https://www.kaggle.com/niharikadeokar" style="color: #000080; text-decoration: none;margin-right: 20px;">Kaggle</a>
+    <a href="https://sites.google.com/view/niharikadeokar/home" style="color: #000080; text-decoration: none;">Certificates</a>
+
 </div>
 
 <style>
